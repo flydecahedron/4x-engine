@@ -7,7 +7,12 @@
 
 #ifndef SRC_COMPONENT_H_
 #define SRC_COMPONENT_H_
+class Component
+{
+public:
+	uint entityUuid;
 
+};
 
 
 

@@ -7,8 +7,15 @@
 
 #ifndef SRC_ENTITY_H_
 #define SRC_ENTITY_H_
+#include <string>
 
-
+class Entity
+{
+public:
+	~Entity(){};
+	uint uuid;
+	std::string type;
+};
 
 
 
