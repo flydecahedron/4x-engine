@@ -12,12 +12,11 @@
 #include "Component.h"
 class EntityManager {
 public:
-	EntityManager();
+	EntityManager(int numberOfEntities);
 	virtual ~EntityManager();
-	void initEntities(int numberOfEntities);
 	void addEntity(Entity entity);
 	void removeEntity(Entity entity);
-
+	Entity getEntity(uint uuid);
 
 private:
 	std::vector<Entity> entities;

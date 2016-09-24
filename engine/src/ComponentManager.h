@@ -15,13 +15,14 @@ class ComponentManager {
 public:
 	ComponentManager();
 	virtual ~ComponentManager();
-	void addComponent(Component component);
-	void removeComponent(Component component);
+	void addComponent(Entity entity, Component component);
+	void removeComponent(Entity entity, Component component);
+	void removeEntity(Entity entity);
 	void addFamily();
 	void removeFamily();
 
 private:
-	std::map<Component> components;
+	std::map<uint, Component> components;
 };
 
 #endif /* SRC_COMPONENTMANAGER_H_ */

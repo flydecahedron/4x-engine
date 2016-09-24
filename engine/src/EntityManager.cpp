@@ -7,12 +7,19 @@
 
 #include "EntityManager.h"
 
-EntityManager::EntityManager() {
-	// TODO Auto-generated constructor stub
-
+EntityManager::EntityManager(int numberOfEntities) {
+	entities.reserve(numberOfEntities);
 }
 
 EntityManager::~EntityManager() {
 	// TODO Auto-generated destructor stub
 }
 
+void EntityManager::addEntity(Entity entity) {
+}
+
+void EntityManager::removeEntity(Entity entity) {
+}
+
+Entity EntityManager::getEntity(uint uuid) {
+}

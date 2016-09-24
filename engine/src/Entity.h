@@ -15,6 +15,7 @@ public:
 	~Entity(){};
 	uint uuid;
 	std::string type;
+
 };
 
 
