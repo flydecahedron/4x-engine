@@ -8,8 +8,12 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <anax/anax.hpp>
 
 int main(void) {
+	anax::World world;
+
 	puts("fuck");
 	return EXIT_SUCCESS;
 }
+
